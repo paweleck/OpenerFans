@@ -20,9 +20,9 @@ module.exports = {
     templates: {
         files: [
             {
-                cwd     : 'src/components/',
+                cwd     : 'src/templates/',
                 src     : '**/*.html',
-                dest    : '.build/tpl/',
+                dest    : '.build/templates/',
                 flatten : false,
                 expand  : true
             }
