@@ -18,6 +18,7 @@ module.exports = function(grunt) {
         }
         grunt.task.run('usemin');
         grunt.task.run('copy:templates');
+        grunt.task.run('copy:css');
         grunt.task.run('copy:images');
         grunt.task.run('jshint:all');
     });
