@@ -3,7 +3,7 @@
 module.exports = {
     images: {
         files: [
-            'src/img/dest/*.*'
+            'src/img/*.*'
         ],
         tasks: ['newer:copy:images']
     },

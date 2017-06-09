@@ -1,19 +1,25 @@
 <div class="container">
-
-    <div class="starter-template">
-        <h1>Angular + Bootstrap + Grunt starter template</h1>
-        <p class="lead">Use this seed project as a way to quickly start any new project.
-            <br>All you get is ready to use Angular seed project with following feature \ items:</p>
-        <p class="bg-success">JsHint</p>
-        <p class="bg-success">Less -> to -> CSS Compilation</p>
-        <p class="bg-success">Watchers</p>
-        <p class="bg-success">Copy</p>
-        <p class="bg-success">Clean</p>
-        <p class="bg-success">Express Server</p>
-        <p class="bg-success">Usemin - To concat all 3rd party and local JS files in to one JS file</p>
-        <p class="bg-success">Livereload</p>
-        <p class="bg-success">Bower</p>
+  <div class="main-logo">
+    <img src="../img/logo.png" alt="" class="img-responsive"/>
+  </div>
+  <div class="o-main-content">
+    <div class="row o-header">
+      <div class="col-md-8 o-header-left">Od fanów</div>
+      <div class="col-md-4 o-header-right">Aktualności</div>
     </div>
+    <div class="row o-content">
+      <div class="col-md-8 o-content-left">
+        <!--<div id="summernote">Hello Summernote</div>-->
+        <summernote ng-model="post"></summernote>
 
+        {{ post }}
+
+        <div ng-bind-html="post"></div>
+
+        <button type="button" ng-click="test()">Send</button>
+      </div>
+      <div class="col-md-4 o-content-right"></div>
+    </div>
+  </div>
 </div>
 <!-- /.container -->
